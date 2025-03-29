@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>THAMIZHSELVAN</title>
+    <style>
+        body {
+            background-color: rgba(0, 0, 0, 0.918);
+            color:lightgoldenrodyellow;
+            font-family: Arial, sans-serif;
+            margin: 0px;
+            padding:0px;
+            
+        }
+
+        #one {
+            padding: 0px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: rgb(0, 0, 0);
+            margin-top: 0px;
+            color: #00ffff;
+            
+        }
+       
+
+        .button {
+            display: flex;
+            gap: 10px;
+        }
+
+        .button button {
+            border: none;
+            padding: 10px 15px;
+            border-radius: 10px;
+            color:#00ffff;
+            background-color: rgba(0, 0, 0, 0.829);
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .button button:hover {
+            background-color:  0 0 15px rgba(0, 255, 255, 0.692);
+            color: black;
+        }
+
+        #two {
+            padding-top: 80px;
+            padding-right: 50vw;
+            text-align: justify;
+            margin-left: 5%;
+            display: block;
+          
+            
+           
+            
+        }
+        #namme{
+            color: #00ffff;
+        }
+      
+
+        #profile img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            margin-top: -280px;
+            box-shadow: 0 0 15px cyan;
+            display: block;
+            margin-left: auto;
+            margin-right: 200px;
+            display: block;
+        
+        }
+        .logo{
+          
+           margin-left: 70px;
+           width: 20px;
+           height: 20px;
+           object-fit: contain;
+           transition: transform 0.3s ease;
+           position: relative;
+                }
+
+                #fb{
+                    position: absolute;
+                    margin-top: 40%;
+                    margin-left: 5%;
+                    left: 20px;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 1000px;
+                    background-color: aquamarine;
+                     box-shadow: 0 0 15px cyan;
+                }
+                 #insta{
+                    position: absolute;
+                    margin-top: 40%;
+                    margin-left: 5%;
+                    left: 80px;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 1000px;
+                    background-color: aquamarine;
+                     box-shadow: 0 0 15px cyan;
+                }
+                #linkedin{
+                     position: absolute;
+                    margin-top: 40%;
+                    margin-left: 5%;
+                    left: 140px;
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 1000px;
+                    background-color: aquamarine;
+                     box-shadow: 0 0 15px cyan;
+                }
+                .logo img:hover {
+    transform: scale(1.2); /* Slight zoom on hover */
+}
+    .readmee{
+        padding-top: 80px;
+            padding-right: 50vw;
+            text-align: justify;
+            margin-left: 5%;
+            display: none;
+    }
+    #abouting{
+        padding-top: 80px;
+            padding-right: 50vw;
+            text-align: justify;
+            margin-left: 5%;
+            display: none;
+            
+    }
+    #image2 img {
+            width: 280px;
+            height: 280px;
+            border-radius: 50%;
+            margin-top: -280px;
+            box-shadow: 0 0 15px cyan;
+            display: block;
+            margin-left: auto;
+            margin-right: 200px;
+            display: none;
+    }
+    .service-box {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    text-align: center;
+    width: 250px; /* Set box width */
+    height: 300px; /* Set box height */
+    background-color: #111; /* Dark background */
+    color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 0 10px cyan;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+  
+    
+}
+
+.service-box {
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #222;
+    color: white;
+    box-shadow: 0 0 10px cyan;
+    display: none;
+
+}
+
+.service-box:hover {
+    transform: scale(1.05); /* Slightly enlarges on hover */
+    box-shadow: 0 0 20px cyan; /* Enhances glow effect */
+    background-color: #333; /* Slight color change */
+}
+    
+
+    /* Centering the container */
+.container {
+    width: 50%;
+    margin: 50px auto;
+    padding: 20px;
+    background: #111;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00ffff;
+    margin-top: 0px;
+    display: none;
+}
+
+/* Contact heading style */
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+h2 span {
+    color: #00ffff;
+}
+
+/* Input group styling */
+.input-group {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Input field styles */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #00ffff;
+    background: #222;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    outline: none;
+    transition: 0.3s ease-in-out;
+}
+
+/* Input focus effect */
+input:focus, textarea:focus {
+    border-color: #ff00ff;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Textarea specific styling */
+textarea {
+    width: 100%;
+    height: 120px;
+    resize: none;
+}
+
+/* Button styling */
+button {
+    background: #00ffff;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+}
+
+/* Button hover effect */
+button:hover {
+    background: #ff00ff;
+    color: white;
+    box-shadow: 0 0 10px #ff00ff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 80%;
+    }
+
+    .input-group {
+        flex-direction: column;
+    }
+
+    input, textarea {
+        width: 100%;
+    }
+}
+
+        #readme {
+            display: block;
+            margin: 30px 80px;
+            padding: 10px 20px;
+            background-color: cyan;
+            color: black;
+            font-weight: bold;
+            border: none;
+            border-radius: 10px;
+            
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        #readme:hover {
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div id="one">
+        <h2 id="name">Thamizhselvan M</h2>
+        <div class="button">
+            <button id="home">Home</button>
+            <button id="about">About</button>
+            <button id="services">Services</button>
+            <button id="contact">Contact</button>
+        </div>
+        
+    </div>
+   
+    <div id="two">
+        <h2 id="hi">Hi, Myself</h2>
+        <h1 id="namme">THAMIZHSELVAN</h1>
+        <h2 id="self">And I'm a <span>Frontend Developer</span> </h2>
+        <p id="p">
+            Passionate and detail-oriented Frontend Developer with expertise in creating responsive, user-friendly web applications. Proficient in HTML, CSS, JavaScript. Skilled in building interactive and visually appealing interfaces while optimizing performance and accessibility.
+        </p>
+    </div>
+
+   
+    <div id="profile">
+        <img src="profile.png" alt="Profile Picture">
+    </div>
+    <div class="readmee">
+        <h1 style="color: #00ffff;">About Me</h1>
+        <h2>I am a <span>Software Developer</span></h2>
+        <p>Innovative and detail-oriented Software Developer with expertise in designing, developing, and optimizing scalable applications.Design, develop, test, and maintain software applications.Write clean, efficient, and well-documented code.Debug, troubleshoot, and optimize software for performance and scalability.Stay updated with industry trends, tools, and technologies.</p>
+    </div>
+    <div id="abouting">
+        <h2>Graduated With <span>BSC Computer Science</span></h2>
+        <h1 style="color: #00ffff;">RelationShip Manager</h1>
+        <h2>IDFC First Bharat LTD</h2>
+        <h3>One Year Experience</h3>
+        
+     </div>
+      
+    <div class="logo">
+        <img src="facebook.png" alt="" id="fb">
+        <img src="iinstagram.png" alt="" id="insta">
+        <img src="in.png" alt="" id="linkedin">
+    </div>
+    <div class="imagee" id="image2">
+        <img src="image2.jpg" alt="" id="im2">
+    </div>
+    
+<div class="services-container" >
+    <div class="service-box" id="sr" >
+        <h3 style="color: #00ffff;">Web Development</h3>
+        <p>Passionate Web Developer with expertise in HTML, CSS, JavaScript.Skilled in creating responsive, user-friendly, and high-performance websites. Experienced in frontend and backend development, ensuring seamless user experiences and optimized web performance. Strong problem-solving skills and a keen eye for design. Always eager to learn and stay updated with the latest web technologies.</p>
+        
+    </div>
+
+    <div class="service-box" id="sr2">
+        <h3 style="color: #00ffff;">Backend Development</h3>
+        <p>Experienced Backend Developer skilled in building scalable, secure, and high-performance applications. Proficient in Python and JavaScript. </p>
+        
+    </div>
+
+    <div class="service-box" id="sr3">
+        <h3 style="color: #00ffff;">App Development</h3>
+        <p>Passionate App Developer with expertise in building responsive, high-performance mobile applications.</p>
+        
+    </div>
+    <div class="container">
+        <h2>Contact <span>Me</span></h2>
+        <form id="contactForm">
+            <div class="input-group">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+            </div>
+            <div class="input-group">
+                <input type="tel" id="contactNumber" placeholder="Contact Number" required>
+                <input type="text" id="subject" placeholder="Email Subject" required>
+            </div>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>
+    <button id="readme">Read Me</button>
+    
+
+    <script>
+        //readme
+        document.getElementById("readme").onclick=function(){
+             document.getElementById("two").style.display='none'
+              document.getElementById("profile").style.display='none'
+              document.getElementById("abouting").style.display='none'
+           document.querySelector(".logo").style.display='block'
+           document.getElementById("im2").style.display='block'
+             document.querySelector(".readmee").style.display='block'
+        }
+        
+            document.getElementById("about").onclick=function(){
+                document.getElementById("two").style.display='none'
+                document.getElementById("profile").style.display='none'
+                document.querySelector(".logo").style.display='none'
+                 document.querySelector(".readmee").style.display='none'
+                   document.getElementById("sr").style.display='none'
+                    document.getElementById("sr2").style.display='none'
+                     document.getElementById("sr3").style.display='none'
+                      document.querySelector(".container").style.display='none'
+                       document.getElementById("im2").style.display='none'
+                document.getElementById("abouting").style.display='block'
+            }
+            document.getElementById("services").onclick = function () {
+    document.getElementById("two").style.display = 'none';
+    document.getElementById("profile").style.display = 'none';
+    document.querySelector(".logo").style.display = 'none';
+    document.querySelector(".readmee").style.display = 'none';
+    document.getElementById("abouting").style.display = 'none';
+    document.getElementById("readme").style.display = 'none';
+     document.querySelector(".container").style.display='none'
+      document.getElementById("im2").style.display='none'
+
+    // Select all service boxes and make them visible
+    let serviceBoxes = document.querySelectorAll(".service-box");
+    serviceBoxes.forEach(box => {
+        
+        box.style.display = 'block';
+    });
+};
+
+
+document.getElementById("contactForm").addEventListener("submit", function(event) {
+        event.preventDefault();
+    
+        let fullName = document.getElementById("fullName").value;
+        let email = document.getElementById("email").value;
+        let contactNumber = document.getElementById("contactNumber").value;
+        let subject = document.getElementById("subject").value;
+        let message = document.getElementById("message").value;
+    
+        let recipientEmail = "thamilmurali2003@gmail.com"; // Your email
+    
+        let mailtoLink = `mailto:${recipientEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+            `Name: ${fullName}\nEmail: ${email}\nContact: ${contactNumber}\nMessage: ${message}`
+        )}`;
+    
+        window.location.href = mailtoLink;
+    });
+    document.getElementById("contact").onclick=function(){
+        document.getElementById("two").style.display='none'
+                document.getElementById("profile").style.display='none'
+                document.querySelector(".logo").style.display='none'
+                 document.querySelector(".readmee").style.display='none'
+                   document.getElementById("sr").style.display='none'
+                    document.getElementById("sr2").style.display='none'
+                     document.getElementById("sr3").style.display='none'
+                document.getElementById("abouting").style.display='none'
+                document.getElementById("readme").style.display = 'none';
+                 document.getElementById("im2").style.display='none'
+                document.querySelector(".container").style.display='block'
+            }
+        document.getElementById("home").onclick=function(){
+            document.getElementById("two").style.display='block'
+                document.getElementById("profile").style.display='block'
+                document.querySelector(".logo").style.display='block'
+                 document.querySelector(".readmee").style.display='none'
+                   document.getElementById("sr").style.display='none'
+                    document.getElementById("sr2").style.display='none'
+                     document.getElementById("sr3").style.display='none'
+                document.getElementById("abouting").style.display='none'
+                document.getElementById("readme").style.display = 'block';
+                 document.getElementById("im2").style.display='none'
+                document.querySelector(".container").style.display='none'
+         
+        }
+    
+        document.getElementById("fb").onclick=function(){
+            window.open('https://www.facebook.com/share/17rvL3oSQu/')
+        }
+        document.getElementById("insta").onclick=function(){
+            window.open('https://www.instagram.com/call_me_thamixx?igsh=MW9oeDRreDlvODk5YQ==')
+        }
+        document.getElementById("linkedin").onclick=function(){
+            window.open('https://www.linkedin.com/in/thamizhselvan-m-336ba9244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app')
+        }
+       
+    </script>
+</body>
+</html>
